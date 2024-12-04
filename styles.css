@@ -1,23 +1,22 @@
-/* Allgemeines Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Grundlegendes Layout */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
     background-color: #f9f9f9;
     line-height: 1.6;
     scroll-behavior: smooth;
-    text-align: center; /* Textzentrierung */
+    text-align: center; 
     width: 80;
     
 }
 
-/* Header */
+
 header {
     background-color: #ffffff;
     border-bottom: 2px solid #e0e0e0;
@@ -36,7 +35,7 @@ header .container {
 
 header h1 {
     font-size: 1.5rem;
-    color: #990000; /* Dezenter roter Akzent */
+    color: #990000; 
 }
 
 header nav ul {
@@ -60,7 +59,7 @@ header nav ul li a:hover {
     color: #990000;
 }
 
-/* Hero Section */
+
 .hero {
     background: url('images/hero.jpg') no-repeat center center/cover;
     height: 350px;
@@ -97,7 +96,7 @@ header nav ul li a:hover {
     background-color: #e60000;
 }
 
-/* Main Content */
+
 main {
     padding: 20px;
 }
@@ -133,7 +132,7 @@ section ul li {
     color: #555;
 }
 
-/* Footer */
+
 footer {
     background-color: #f1f1f1;
     padding: 20px;
@@ -173,13 +172,15 @@ footer .footer-column ul li a {
 footer .footer-column ul li a:hover {
     color: #990000;
 }
-
+footer a:hover {
+    color: #990000; 
+}
 footer .footer-note {
     font-size: 0.9rem;
     color: #999;
 }
 
-/* Form Styles */
+
 form {
     display: flex;
     flex-direction: column;
@@ -222,11 +223,11 @@ form button:hover {
 }
 
 .card {
-    display: flex; /* Flexbox aktivieren */
-    margin: auto; /* Automatische Zentrierung innerhalb des Containers */
-    flex-direction: column; /* Inhalt in Spaltenanordnung */
-    align-items: center; /* Horizontal zentrieren */
-    justify-content: center; /* Vertikal zentrieren */
+    display: flex; 
+    margin: auto; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
     background: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -259,7 +260,9 @@ form button:hover {
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+         padding: 10px 15px;
     }
 
     header nav ul {
@@ -278,8 +281,27 @@ form button:hover {
     .hero p {
         font-size: 1rem;
     }
+      footer .footer-container {
+        flex-direction: column; 
+        align-items: center;  
+    }
+
+    footer .footer-column {
+        margin: 10px 0;
+    }
+
+    footer .footer-column ul {
+        text-align: center; 
+    }
+
+    footer .footer-note {
+        text-align: center;
+    }
 }
-/* Boxen für die Hauptseite */
+  
+    
+
+
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -294,7 +316,7 @@ form button:hover {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: calc(33.333% - 40px); /* Drei Boxen in einer Zeile */
+    width: calc(33.333% - 40px); 
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -315,15 +337,15 @@ form button:hover {
     color: #555;
 }
 
-/* Responsives Layout */
+
 @media (max-width: 768px) {
     .services .box {
-        width: calc(50% - 20px); /* Zwei Boxen in einer Zeile auf Tablets */
+        width: calc(50% - 20px); 
     }
 }
 
 @media (max-width: 480px) {
     .services .box {
-        width: 100%; /* Eine Box pro Zeile auf Mobilgeräten */
+        width: 100%; 
     }
 }
